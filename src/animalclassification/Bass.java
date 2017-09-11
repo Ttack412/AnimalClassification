@@ -9,19 +9,19 @@ package animalclassification;
  *
  * @author ttackett
  */
-public class Dolphin extends MammalClass implements ISwim, IMakeSound{
+public class Bass extends FishClass implements ISwim, IMakeSound{
 
-    public Dolphin(String Name, int BodyTemp) {
-        super(Name, BodyTemp);
+    public Bass(String Name, boolean isSaltWater) {
+        super(Name, isSaltWater);
     }
-
+    
     @Override
     public void Swim() {
-        System.out.println("The Dolphin is swimming");
+        System.out.println("The Bass is swimming");
     }
     
     @Override
     public void MakeSound() {
-        System.out.println("I'm a Dolphin and I say Squeak");
+        System.out.println("I'm a Bass and I say Splashy Splash");
     } 
 }

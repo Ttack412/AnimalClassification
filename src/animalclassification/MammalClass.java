@@ -9,6 +9,10 @@ package animalclassification;
  *
  * @author ttackett
  */
-public class MammalClass {
-    
+public class MammalClass extends Animal{
+    int bodyTemp;
+
+    public MammalClass(String Name, int BodyTemp) {
+        super(Name, BodyTemp);
+    }   
 }

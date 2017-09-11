@@ -10,5 +10,5 @@ package animalclassification;
  * @author ttackett
  */
 public interface IMakeSound {
-    
+    void MakeSound();
 }

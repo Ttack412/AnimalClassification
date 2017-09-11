@@ -9,6 +9,10 @@ package animalclassification;
  *
  * @author ttackett
  */
-public class FishClass {
-    
+public  class FishClass extends Animal{ 
+    Boolean isSaltWater;
+
+    public FishClass(String Name, boolean isSaltWater) {
+        super(Name, isSaltWater);
+    }     
 }

@@ -9,6 +9,20 @@ package animalclassification;
  *
  * @author ttackett
  */
-public class Shark {
+public class Shark extends FishClass implements ISwim, IMakeSound{
     
+    public Shark(String Name, boolean isSaltWater) {
+        super(Name, isSaltWater);
+        this.Name = Name;
+    }
+
+    @Override
+    public void Swim() {
+        System.out.println("The Shark is swimming");
+    }
+    
+    @Override
+    public void MakeSound() {
+        System.out.println("I'm a Shark and I say RAWR");
+    } 
 }

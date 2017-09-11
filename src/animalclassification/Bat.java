@@ -9,6 +9,29 @@ package animalclassification;
  *
  * @author ttackett
  */
-public class Bat {
+public class Bat extends MammalClass implements IFly, IWalk, ISwim, IMakeSound{
+
+    public Bat(String Name, int BodyTemp) {
+        super(Name, BodyTemp);
+    }
+
+    @Override
+    public void Fly() {
+        System.out.println("The Bat is flying");
+    }
+
+    @Override
+    public void Walk() {
+        System.out.println("The Bat is walking");
+    }
+
+    @Override
+    public void Swim() {
+        System.out.println("The Bat is swimming");
+    }
     
+    @Override
+    public void MakeSound() {
+        System.out.println("I'm a Bat and I say Screech");
+    } 
 }

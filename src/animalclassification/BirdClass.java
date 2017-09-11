@@ -9,6 +9,12 @@ package animalclassification;
  *
  * @author ttackett
  */
-public class BirdClass {
+public class BirdClass extends Animal{
+    double Wingspan;
+    
+    public BirdClass(String Name, double Wingspan) {
+        super(Name, Wingspan);
+    }
+    
     
 }

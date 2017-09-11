@@ -9,6 +9,24 @@ package animalclassification;
  *
  * @author ttackett
  */
-public class FlyingFish {
+public class FlyingFish extends FishClass implements IFly, ISwim, IMakeSound{
+
+    public FlyingFish(String Name, boolean isSaltWater) {
+        super(Name, isSaltWater);
+    }
+
+    @Override
+    public void Fly() {
+        System.out.println("The FlyingFish is flying");
+    }
     
+    @Override
+    public void Swim() {
+        System.out.println("The FlyingFish is swimming");
+    }
+
+    @Override
+    public void MakeSound() {
+        System.out.println("I'm a FlyingFish and I say Splash");
+    }   
 }

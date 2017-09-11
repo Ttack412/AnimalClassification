@@ -9,6 +9,24 @@ package animalclassification;
  *
  * @author ttackett
  */
-public class Penguin {
+public class Penguin extends BirdClass implements IWalk, ISwim, IMakeSound{
+
+    public Penguin(double Wingspan, String Name) {
+        super(Name,Wingspan);
+    }
     
+    @Override
+    public void Walk() {
+        System.out.println("The Penguin is walking");
+    }
+
+    @Override
+    public void Swim() {
+        System.out.println("The Penguin is swimming");
+    }
+    
+    @Override
+    public void MakeSound() {
+        System.out.println("I'm a Penguin and I say PECK PECK");
+    } 
 }

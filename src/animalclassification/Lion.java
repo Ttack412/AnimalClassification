@@ -9,6 +9,26 @@ package animalclassification;
  *
  * @author ttackett
  */
-public class Lion {
+public class Lion extends MammalClass implements IWalk, ISwim, IMakeSound{
+
+    public Lion(String Name, int BodyTemp) {
+        super(Name, BodyTemp);
+    }
+
+    @Override
+    public void Walk()
+    {
+        System.out.println("The Lion is walking");
+    }
     
+    @Override
+    public void Swim()
+    {
+        System.out.println("The Lion is swimming");
+    }
+    
+    @Override
+    public void MakeSound() {
+        System.out.println("I'm a Lion and I say ROAR");
+    } 
 }

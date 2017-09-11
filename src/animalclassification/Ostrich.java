@@ -9,6 +9,21 @@ package animalclassification;
  *
  * @author ttackett
  */
-public class Ostrich {
+public class Ostrich extends BirdClass implements IWalk, IMakeSound{
+    
+    public Ostrich(double Wingspan, String Name) {
+        super(Name,Wingspan);
+    }
+    
+    @Override
+    public void Walk()
+    {
+        System.out.println("The Ostrich is walking");
+    }
+    
+    @Override
+    public void MakeSound() {
+        System.out.println("I'm an Ostrich and I say CAWWW");
+    } 
     
 }
