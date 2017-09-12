@@ -10,11 +10,13 @@ package animalclassification;
  * @author ttackett
  */
 public class Bass extends FishClass implements ISwim, IMakeSound{
-
+    
+    //fish constructor
     public Bass(String Name, boolean isSaltWater) {
         super(Name, isSaltWater);
     }
     
+    //methods from the interfaces
     @Override
     public void Swim() {
         System.out.println("The Bass is swimming");
@@ -23,5 +25,5 @@ public class Bass extends FishClass implements ISwim, IMakeSound{
     @Override
     public void MakeSound() {
         System.out.println("I'm a Bass and I say Splashy Splash");
-    } 
+    }     
 }
