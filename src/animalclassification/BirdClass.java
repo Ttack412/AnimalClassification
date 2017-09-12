@@ -10,6 +10,7 @@ package animalclassification;
  * @author ttackett
  */
 public class BirdClass extends Animal{
+    //passes on the bird constructor to the animals
     double Wingspan;
     
     public BirdClass(String Name, double Wingspan) {
