@@ -11,11 +11,12 @@ package animalclassification;
  */
 public class Eagle extends BirdClass implements IWalk, IFly, ISwim, IMakeSound{
 
-
+    //bird constructor
     public Eagle( double Wingspan, String Name) {
         super(Name, Wingspan);
     }
 
+    //methods from the interfaces
     @Override
     public void Walk() {
         System.out.println("The Eagle is walking");
