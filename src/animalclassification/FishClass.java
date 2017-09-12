@@ -10,6 +10,7 @@ package animalclassification;
  * @author ttackett
  */
 public  class FishClass extends Animal{ 
+    //passes on the fish constructor to the animals
     Boolean isSaltWater;
 
     public FishClass(String Name, boolean isSaltWater) {
