@@ -18,6 +18,7 @@ public class AnimalClassification {
      */
     public static void main(String[] args) {
         
+        //Makes all my arrays
         ArrayList<Animal> myAnimals = new ArrayList<>();
         ArrayList<Animal> myBirds = new ArrayList<>();
         ArrayList<Animal> myMammals = new ArrayList<>();
@@ -27,6 +28,7 @@ public class AnimalClassification {
         ArrayList<ISwim> mySwimmers = new ArrayList<>();
         ArrayList<IMakeSound> mySoundMakers = new ArrayList<>();
         
+        //creates my animals
         FlyingFish myFlyingFish = new FlyingFish("Blake", true);
         Shark myShark = new Shark("AG", true);
         Bass myBass = new Bass("John", false);
@@ -38,6 +40,7 @@ public class AnimalClassification {
         Ostrich myOstrich = new Ostrich(5,"Aiden");
         Penguin myPenguin = new Penguin(3,"Caleb");
         
+        //Adds the animals to every list they need to be in
         myAnimals.add(myFlyingFish);
         myAnimals.add(myShark);
         myAnimals.add(myBass);
@@ -92,11 +95,13 @@ public class AnimalClassification {
         mySoundMakers.add(myFlyingFish);
         mySoundMakers.add(myDuck);
         
+        //Loops so I can output everything that needs to be done or said
         for(Animal animals: myAnimals)
         {
             System.out.println("My name is " + animals.getName());
         }
         
+        //extra space for easier readablility
         System.out.println("");
         System.out.println("");
         
