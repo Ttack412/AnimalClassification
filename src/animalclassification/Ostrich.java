@@ -11,10 +11,12 @@ package animalclassification;
  */
 public class Ostrich extends BirdClass implements IWalk, IMakeSound{
     
+    //bird constructor
     public Ostrich(double Wingspan, String Name) {
         super(Name,Wingspan);
     }
     
+    //methods from interfaces
     @Override
     public void Walk()
     {
