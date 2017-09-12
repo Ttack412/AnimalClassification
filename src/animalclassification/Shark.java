@@ -11,11 +11,13 @@ package animalclassification;
  */
 public class Shark extends FishClass implements ISwim, IMakeSound{
     
+    //mammal constructor
     public Shark(String Name, boolean isSaltWater) {
         super(Name, isSaltWater);
         this.Name = Name;
     }
-
+    
+    //methods from the interfaces
     @Override
     public void Swim() {
         System.out.println("The Shark is swimming");
