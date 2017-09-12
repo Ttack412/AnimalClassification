@@ -10,6 +10,7 @@ package animalclassification;
  * @author ttackett
  */
 public class MammalClass extends Animal{
+    //passes on the mammal constructor
     int bodyTemp;
 
     public MammalClass(String Name, int BodyTemp) {
