@@ -10,11 +10,12 @@ package animalclassification;
  * @author ttackett
  */
 public class FlyingFish extends FishClass implements IFly, ISwim, IMakeSound{
-
+    //fish constructor
     public FlyingFish(String Name, boolean isSaltWater) {
         super(Name, isSaltWater);
     }
-
+    
+    //methods from the interfaces
     @Override
     public void Fly() {
         System.out.println("The FlyingFish is flying");
