@@ -11,10 +11,12 @@ package animalclassification;
  */
 public class Dolphin extends MammalClass implements ISwim, IMakeSound{
 
+    //mammal constructor
     public Dolphin(String Name, int BodyTemp) {
         super(Name, BodyTemp);
     }
 
+    //methods from the interfaces
     @Override
     public void Swim() {
         System.out.println("The Dolphin is swimming");
