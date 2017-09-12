@@ -11,10 +11,12 @@ package animalclassification;
  */
 public class Bat extends MammalClass implements IFly, IWalk, ISwim, IMakeSound{
 
+    //mammal constructor
     public Bat(String Name, int BodyTemp) {
         super(Name, BodyTemp);
     }
-
+    
+    //methods from the interfaces
     @Override
     public void Fly() {
         System.out.println("The Bat is flying");
